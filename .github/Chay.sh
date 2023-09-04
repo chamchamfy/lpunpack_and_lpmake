@@ -12,5 +12,6 @@ sudo apt-get install curl zlib1g-dev clang automake >/dev/null
 echo
 
 ./make.sh
-
+ls bin
+ls $TOME
 echo "- Kết thúc"
