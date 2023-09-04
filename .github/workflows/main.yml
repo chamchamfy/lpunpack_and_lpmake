@@ -1,0 +1,20 @@
+name: 'RUN BUILD'
+on: 
+
+  workflow_dispatch:
+jobs:
+  build:
+    name: 'Xem quá trình...'
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: 'Xem thông báo'
+        run: |
+          # Run Rebuild 
+          bash .github/Chay.sh
+      - uses: actions/upload-artifact@v3
+        with:
+          name: lpmakecc
+          path: $GITHUB_WORKSPACE/bin
+          retention-days: 3
