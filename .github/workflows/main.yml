@@ -16,5 +16,5 @@ jobs:
       - uses: actions/upload-artifact@v3
         with:
           name: lpmakecc
-          path: $GITHUB_WORKSPACE/bin
+          path: $GITHUB_WORKSPACE/bin/*
           retention-days: 3
