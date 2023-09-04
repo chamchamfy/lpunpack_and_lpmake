@@ -13,5 +13,5 @@ echo
 
 ./make.sh
 ls bin
-ls $TOME
+ls $TOME/bin
 echo "- Kết thúc"
